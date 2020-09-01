@@ -14,7 +14,7 @@ RUN useradd -m -u $UID -g $GID -o -s /bin/bash $UNAME
 # Install.
 RUN apt-get clean && apt-get update && \
   apt-get install -y pcb geda gerbv geda-utils && \
-  apt-get install -y python3-pip && \
+  apt-get install -y pylint python3-pip && \
   pip3 install -U pip python-pptx pillow && \
   rm -rf /var/lib/apt/lists/*
 
