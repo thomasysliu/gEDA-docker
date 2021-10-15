@@ -14,3 +14,6 @@ $ docker run -ti --rm --network=host -e DISPLAY=$DISPLAY -v $HOME/.Xauthority:/h
 
 
 $ docker run -ti --rm --network=host -e DISPLAY=$DISPLAY -v $HOME/.Xauthority:/home/developer/.Xauthority:ro -u root thomasysliu/geda-docker gerberv
+
+
+$ docker run -ti --rm --network=host -e DISPLAY=$DISPLAY -v $HOME/.Xauthority:/home/developer/.Xauthority:ro -u root thomasysliu/geda-docker gsch2pcb
